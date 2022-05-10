@@ -1,4 +1,4 @@
-package com.thilaka.a.introduction.a.design.linked.list.a.doubly.linked.list;
+package com.thilaka.a.singly.linked.list.a.design.linked.list.a.doubly.linked.list;
 
 public class Main {
     public static void main(String[] args) {
