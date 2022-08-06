@@ -5,7 +5,7 @@ public class Main {
         MyDoublyLinkedList myList = new MyDoublyLinkedList();
         myList.addAtHead(1);
         myList.addAtTail(3);
-        myList.addAtIndex(1,2);
+        myList.addAtIndex(1, 2);
         System.out.println(myList.get(1));
         myList.deleteAtIndex(1);
         System.out.println(myList.get(1));
@@ -31,13 +31,13 @@ public class Main {
         myList4.addAtHead(7);
         myList4.addAtHead(2);
         myList4.addAtHead(1);
-        myList4.addAtIndex(3,0);
+        myList4.addAtIndex(3, 0);
         myList4.deleteAtIndex(2);
         myList4.addAtHead(6);
         myList4.addAtTail(4);
         System.out.println(myList4.get(4));
         myList4.addAtHead(4);
-        myList4.addAtIndex(5,0);
+        myList4.addAtIndex(5, 0);
         myList4.addAtHead(6);
     }
 }

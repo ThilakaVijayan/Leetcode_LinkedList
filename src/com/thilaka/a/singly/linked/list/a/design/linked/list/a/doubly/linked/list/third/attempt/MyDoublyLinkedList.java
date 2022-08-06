@@ -16,17 +16,17 @@ public class MyDoublyLinkedList implements MyLinkedList {
     }
 
     private DoublyListNode getNode(int index) {
-        if(index > this.length -1)
+        if (index > this.length - 1)
             return null;
         if (isInFirstHalf(index)) {
             DoublyListNode currNode = this.head;
-            for(int currIndex = 0; index != currIndex; currIndex++)
+            for (int currIndex = 0; index != currIndex; currIndex++)
                 currNode = currNode.getNext();
             return currNode;
         } else {
 
             DoublyListNode currNode = this.tail;
-            for(int currIndex = this.length - 1; index != currIndex; currIndex--)
+            for (int currIndex = this.length - 1; index != currIndex; currIndex--)
                 currNode = currNode.getPrev();
             return currNode;
         }
@@ -60,7 +60,7 @@ public class MyDoublyLinkedList implements MyLinkedList {
 
     @Override
     public void addAtIndex(int index, int val) {
-        if(index > this.length)
+        if (index > this.length)
             return;
         if (0 == index) {
             addAtHead(val);
@@ -84,7 +84,7 @@ public class MyDoublyLinkedList implements MyLinkedList {
 
     @Override
     public void deleteAtIndex(int index) {
-        if(index > this.length -1)
+        if (index > this.length - 1)
             return;
         if (0 == index) {
             deleteAtHead();
@@ -105,7 +105,7 @@ public class MyDoublyLinkedList implements MyLinkedList {
     }
 
     private void deleteAtHead() {
-        if(0 == this.length)
+        if (0 == this.length)
             return;
 
         if (1 == this.length) {
@@ -120,7 +120,7 @@ public class MyDoublyLinkedList implements MyLinkedList {
     }
 
     private void deleteAtTail() {
-        if(0 == this.length)
+        if (0 == this.length)
             return;
 
         if (1 == this.length) {

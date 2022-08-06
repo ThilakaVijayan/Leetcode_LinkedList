@@ -5,7 +5,7 @@ public class Main {
         MySinglyLinkedList myList = new MySinglyLinkedList();
         myList.addAtHead(1);
         myList.addAtTail(3);
-        myList.addAtIndex(1,2);
+        myList.addAtIndex(1, 2);
         System.out.println(myList.get(1));
         myList.deleteAtIndex(1);
         System.out.println(myList.get(1));

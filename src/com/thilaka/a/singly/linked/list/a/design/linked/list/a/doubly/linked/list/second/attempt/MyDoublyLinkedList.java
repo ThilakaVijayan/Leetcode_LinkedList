@@ -30,7 +30,7 @@ public class MyDoublyLinkedList implements MyLinkedList {
         DoublyListNode currHead = this.head;
         DoublyListNode newNode = new DoublyListNode(val);
         newNode.setNext(currHead);
-        if(null != currHead)
+        if (null != currHead)
             currHead.setPrev(newNode);
         this.head = newNode;
     }
@@ -64,7 +64,7 @@ public class MyDoublyLinkedList implements MyLinkedList {
         DoublyListNode newNode = new DoublyListNode(val);
         prevNode.setNext(newNode);
         newNode.setNext(nextNode);
-        if(null != nextNode)
+        if (null != nextNode)
             nextNode.setPrev(newNode);
         newNode.setPrev(prevNode);
     }
@@ -83,12 +83,12 @@ public class MyDoublyLinkedList implements MyLinkedList {
             return;
         DoublyListNode nextNode = currNode.getNext();
         prevNode.setNext(nextNode);
-        if(null != nextNode)
+        if (null != nextNode)
             nextNode.setPrev(prevNode);
     }
 
     private void deleteAtHead() {
-        if (null == this.head || null == this.head.getNext()){
+        if (null == this.head || null == this.head.getNext()) {
             this.head = null;
             return;
         }

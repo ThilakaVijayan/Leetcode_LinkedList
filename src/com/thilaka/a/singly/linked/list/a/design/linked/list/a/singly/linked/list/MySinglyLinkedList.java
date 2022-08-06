@@ -8,7 +8,7 @@ public class MySinglyLinkedList implements MyLinkedList {
     @Override
     public int get(int index) {
         SinglyListNode node = getNode(index);
-        if(null == node)
+        if (null == node)
             return -1;
         return node.getVal();
     }
@@ -54,7 +54,7 @@ public class MySinglyLinkedList implements MyLinkedList {
             return;
         }
         SinglyListNode prevNode = getNode(index - 1);
-        if(null == prevNode)
+        if (null == prevNode)
             return;
         SinglyListNode nextNode = prevNode.getNext();
         SinglyListNode newNode = new SinglyListNode(val);
@@ -69,7 +69,7 @@ public class MySinglyLinkedList implements MyLinkedList {
             return;
         }
         SinglyListNode prevNode = getNode(index - 1);
-        if(null == prevNode)
+        if (null == prevNode)
             return;
         SinglyListNode currNode = prevNode.getNext();
         if (null == currNode)
